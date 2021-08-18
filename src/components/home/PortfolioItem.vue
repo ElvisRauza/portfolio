@@ -1,5 +1,8 @@
 <template>
-  <router-link :to="'/portfolio/' + item.slug">
+  <router-link
+    class="portfolio-item"
+    :to="'/portfolio/' + item.slug"
+  >
     <div class="portfolio-item__image-wrap">
       <img
         class="portfolio-item__image"
@@ -39,7 +42,7 @@ export default {
     transition: all 1s ease-out;
 
     .portfolio-item:hover & {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 
@@ -59,12 +62,12 @@ export default {
     right: 0;
     bottom: 0;
 
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
 
-    background-color: rgba(black, 0.5);
-    transition: all 0.3s;
+    background-color: rgba($gray, 0.3);
+    transition: all 0.2s;
 
     .portfolio-item:hover & {
       opacity: 1;
@@ -73,9 +76,18 @@ export default {
   }
 
   &__title {
+    opacity: 0.8;
+
     color: white;
     font-size: 20px;
-    font-weight: bold;
+    margin: 0;
+
+    transition: all 0.3s ease-out;
+    transform: translateY(50px);
+
+    .portfolio-item:hover & {
+      transform: translateY(0);
+    }
   }
 }
 </style>
