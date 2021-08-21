@@ -1,5 +1,6 @@
 <template>
   <Portfolio />
+  <!-- About me -->
 </template>
 
 <script>
