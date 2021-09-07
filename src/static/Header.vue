@@ -1,7 +1,6 @@
 <template>
   <header>
     <div class="container">
-      <p>Elvis Rauza</p>
     </div>
   </header>
 </template>

@@ -1,6 +1,9 @@
 <template>
   <section class="portfolio">
     <div class="container">
+      <h2 class="block-title">
+        My work
+      </h2>
       <div class="flexbox flexbox--full">
         <div
           v-for="item in items"
@@ -15,7 +18,7 @@
 </template>
 
 <script>
-import PortfolioItem from "@/components/home/PortfolioItem.vue";
+import PortfolioItem from "@/components/portfolio/Item.vue";
 
 export default {
   name: "Portfolio",
@@ -24,9 +27,9 @@ export default {
   },
   computed: {
     items() {
-      return this.$store.state.porfolio
-    }
-  }
+      return this.$store.state.porfolio;
+    },
+  },
 };
 </script>
 

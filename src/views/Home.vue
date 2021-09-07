@@ -1,15 +1,20 @@
 <template>
-  <Portfolio />
-  <!-- About me -->
+  <HomeHero />
+  <HomeAboutMe />
+  <HomePortfolios />
 </template>
 
 <script>
-import Portfolio from "@/components/home/Portfolio.vue";
+import HomeHero from "@/components/home/Hero";
+import HomeAboutMe from "@/components/home/AboutMe";
+import HomePortfolios from "@/components/home/Portfolios";
 
 export default {
   name: "Home",
   components: {
-    Portfolio,
+    HomeHero,
+    HomeAboutMe,
+    HomePortfolios,
   },
 };
 </script>

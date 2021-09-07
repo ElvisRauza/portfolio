@@ -26,10 +26,10 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0 -15px;
+  margin: 0 -30px;
 
   .col {
-    padding: 0 15px;
+    padding: 0 30px;
   }
 
   &--full {
@@ -41,10 +41,10 @@
   }
 
   &--grid {
-    margin: -15px;
+    margin: -30px;
 
     & > .col {
-      padding: 15px;
+      padding: 30px;
     }
   }
 
