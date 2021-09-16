@@ -1,25 +1,24 @@
 <template>
   <PortfolioHero :item="item" />
-  <PortfolioContent :item="item" />
+  <PortfolioInfo :item="item" />
 </template>
 
 <script>
-import PortfolioHero from '@/components/portfolio/Hero';
-import PortfolioContent from '@/components/portfolio/Content';
+import PortfolioHero from "@/components/portfolio/single/Hero";
+import PortfolioInfo from "@/components/portfolio/single/Info";
+
 export default {
-  name: 'SinglePorfolio',
+  name: "SinglePorfolio",
   components: {
     PortfolioHero,
-    PortfolioContent
+    PortfolioInfo,
   },
   computed: {
     item() {
       return this.$store.getters.getPorfolio(this.$route.params.slug);
     },
-  }
-}
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

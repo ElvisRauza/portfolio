@@ -27,10 +27,14 @@ export default {
   },
   computed: {
     items() {
-      return this.$store.getters.getFeaturedPortfolios();
+      return this.$store.state.porfolio;
     },
   },
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.portfolio {
+  padding-top: 130px;
+}
+</style>

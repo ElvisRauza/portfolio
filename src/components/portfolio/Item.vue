@@ -1,5 +1,10 @@
 <template>
   <router-link
+    v-observe-visibility="{
+      callback: handlePortfolioAnimation,
+      once: true,
+      throttle: 100,
+    }"
     class="portfolio-item"
     :to="'/portfolio/' + item.slug"
   >
@@ -26,6 +31,16 @@ export default {
       type: Object,
     },
   },
+  methods: {
+    handlePortfolioAnimation(isVisible, entry) {
+      let el = entry.target;
+      if (isVisible) {
+        el.classList.add("portfolio-item--animate");
+      } else {
+        el.classList.remove("portfolio-item--animate");
+      }
+    },
+  },
 };
 </script>
 
@@ -34,6 +49,15 @@ export default {
   position: relative;
   display: block;
   overflow: hidden;
+
+  margin-top: -30px;
+  opacity: 0;
+  transition: all 0.33s;
+
+  &--animate {
+    opacity: 1;
+    margin-top: 0;
+  }
 
   &__image-wrap {
     width: 100%;

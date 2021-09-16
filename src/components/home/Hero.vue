@@ -1,5 +1,12 @@
 <template>
   <section class="hero full">
+    <div class="hero__bg">
+      <img
+        class="hero__bg-img"
+        src="@/assets/city-night.jpg"
+        alt=""
+      />
+    </div>
     <div class="container">
       <div class="hero__inner">
         <h1
@@ -11,7 +18,7 @@
           class="hero__title"
         >
           Hello, I'm <span>Elvis Rauza</span>. <br />
-          I'm a full-stack developer.
+          I'm a full-stack web developer.
         </h1>
       </div>
     </div>
@@ -34,7 +41,27 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+  }
+
   &__inner {
+    position: relative;
+    z-index: 1;
     height: 100vh;
 
     display: flex;

@@ -14,13 +14,16 @@ export default {
   computed: {
     year() {
       return new Date().getFullYear();
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footer {
+  padding: 10px 0;
+  text-align: center;
+
   &__copyright {
     font-size: 12px;
   }

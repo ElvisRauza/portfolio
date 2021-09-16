@@ -6,7 +6,7 @@
 
 html {
   font-size: 10px;
-  color: white;
+  color: $text;
   background-color: $black;
 }
 
@@ -21,8 +21,14 @@ img {
   height: auto;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 a,
 button {
+  display: inline-block;
   cursor: pointer;
 }
 
@@ -61,10 +67,17 @@ section {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 30px;
+
+  &--medium {
+    @include resp-min("s") {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
 
   &--large {
-    @include resp-min('s') {
+    @include resp-min("s") {
       width: 90%;
       margin: 0 auto;
     }
@@ -72,8 +85,30 @@ section {
 }
 
 .block-title {
+  position: relative;
   text-align: center;
   margin: 0 0 50px;
+  text-transform: uppercase;
+
+  $width: 100px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    margin: {
+      bottom: -5px;
+      left: -#{$width/2};
+    }
+
+    display: block;
+    width: $width;
+    height: 3px;
+    background-color: $white;
+  }
 }
 
 .bg-light {

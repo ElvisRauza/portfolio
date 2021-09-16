@@ -1,26 +1,21 @@
 <template>
   <section class="about-me bg-light">
-    <div class="container container--large">
+    <div class="container container--medium">
       <h2 class="block-title">
-        About me
+        About
       </h2>
       <div class="flexbox">
         <div class="col col-50">
+          <p>Who am I?</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            placerat auctor semper. Vivamus sed est at ligula pellentesque
-            vestibulum nec at nisl. Maecenas efficitur magna quis tortor
-            facilisis, a pretium metus efficitur. Nulla dapibus faucibus
-            porttitor. In massa sapien, pretium feugiat risus eu, pharetra
-            consequat leo. Ut vestibulum, massa eget rutrum ornare, nibh sapien
-            dapibus est, sed ultricies est dolor in neque. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Fusce eu libero sed velit cursus tincidunt non non felis.
-            Nunc convallis commodo augue id bibendum. Phasellus placerat rhoncus
-            nisl, eu fringilla neque laoreet ac. Donec mattis urna tortor, sed
-            ornare tortor mattis sed. Sed tincidunt lectus lobortis dictum
-            lacinia. Donec sed leo tortor. Proin eleifend viverra orci in
-            placerat.
+            I'm web developer from Lativia. I have experiance developing
+            WordPress sites from One-Pagers to fully-fledged
+            WooCommerce stores.
+          </p>
+          <p>
+            I have experiance in SysOps, that includes configured LEMP server
+            stack, working with Nginx, PHP and MySQL configs, Certbot SSL
+            certificate configuration and much more.
           </p>
         </div>
         <div class="col col-50">
@@ -70,14 +65,18 @@ export default {
         },
         {
           label: "JavaScript",
-          progress: 80,
+          progress: 90,
         },
         {
           label: "PHP",
-          progress: 80,
+          progress: 85,
         },
         {
-          label: "Vue",
+          label: "Vue.JS",
+          progress: 70,
+        },
+        {
+          label: "Docker",
           progress: 65,
         },
       ],
