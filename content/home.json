@@ -1,0 +1,28 @@
+{
+  "skills": [
+    {
+      "label": "HTML",
+      "progress": 95
+    },
+    {
+      "label": "CSS",
+      "progress": 95
+    },
+    {
+      "label": "JavaScript",
+      "progress": 90
+    },
+    {
+      "label": "PHP",
+      "progress": 85
+    },
+    {
+      "label": "Vue.JS",
+      "progress": 70
+    },
+    {
+      "label": "Docker",
+      "progress": 65
+    }
+  ]
+}

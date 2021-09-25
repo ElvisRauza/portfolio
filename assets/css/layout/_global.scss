@@ -1,0 +1,118 @@
+@use 'sass:math';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  color: $text;
+  background-color: $black;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a,
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 1em;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+section {
+  padding: 50px 0;
+
+  &.full {
+    padding: 0;
+  }
+}
+
+.container {
+  padding: 0 30px;
+
+  &--medium {
+    @include resp-min("s") {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  &--large {
+    @include resp-min("s") {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.block-title {
+  position: relative;
+  text-align: center;
+  margin: 0 0 50px;
+  text-transform: uppercase;
+
+  $width: 100px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    margin: {
+      bottom: -5px;
+      left: -#{math.div($width,2)};
+    }
+
+    display: block;
+    width: $width;
+    height: 3px;
+    background-color: $white;
+  }
+}
+
+.bg-light {
+  background-color: lighten($black, 2%);
+}
