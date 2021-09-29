@@ -1,41 +1,19 @@
 <template>
-  <section class="about-me bg-light">
+  <section class="about-me">
     <div class="container container--medium">
-      <h2 class="block-title">About</h2>
+      <h2 class="block-title">About me</h2>
       <div class="flexbox">
-        <div class="col col-50">
-          <p>Who am I?</p>
+        <div class="col col-70">
           <p>
-            I'm web developer from Lativia. I have experiance developing
-            WordPress sites from One-Pagers to fully-fledged WooCommerce stores.
+            I have experiance developing WordPress sites from One-Pagers to
+            fully-fledged WooCommerce stores.
           </p>
-          <p>
-            I have experiance in SysOps, that includes configured LEMP server
-            stack, working with Nginx, PHP and MySQL configs, Certbot SSL
-            certificate configuration and much more.
-          </p>
-        </div>
-        <div class="col col-50">
-          <div class="skills">
-            <div v-for="(skill, i) in skills" :key="i" class="skill">
-              <p class="skill__label skill__label--left">
-                {{ skill.label }}
-              </p>
-              <div
-                v-observe-visibility="{
-                  callback: handleBarAnimation,
-                  once: true,
-                  throttle: 100
-                }"
-                class="skill__bar"
-                :data-width="skill.progress"
-              >
-                <p class="skill__label skill__label--right">
-                  {{ skill.progress }}%
-                </p>
-              </div>
-            </div>
-          </div>
+          <p>Some of technologies I work with:</p>
+          <ul class="tech">
+            <li v-for="(skill, i) in skills" :key="i" class="tech__item">
+              <p class="tech__item-label">{{ skill.label }}</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -68,44 +46,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$bar-height: 30px;
-$offset: 100px;
-.about-me {
-}
-.skill {
-  position: relative;
-  padding-left: $offset;
-  background-color: lighten($black, 5%);
-  margin: 0 0 10px;
+.tech {
+  padding: 0;
+  list-style: none;
 
-  &__label {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
 
-    font-size: 1.4rem;
-    line-height: $bar-height;
-    margin: 0;
-    text-align: center;
+  &__item {
+    margin: 0 5px;
 
-    &--left {
-      left: 0;
-      width: $offset;
-      background-color: darken($blue, 10%);
-    }
+    display: flex;
+    align-items: center;
 
-    &--right {
-      right: 0;
-      width: 60px;
+    &::before {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 2px;
+      margin-right: 3px;
+      background-color: $main-color;
     }
   }
 
-  &__bar {
-    position: relative;
-    width: 10%;
-    height: $bar-height;
-    background-color: $blue;
-    transition: all 1s ease-in;
+  &__item-label {
+    font-size: 1.4rem;
+    margin: 0;
   }
 }
 </style>

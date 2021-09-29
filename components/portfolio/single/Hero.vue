@@ -1,7 +1,12 @@
 <template>
   <section class="hero full">
     <div class="hero__main">
-      <img class="hero__image" :src="item.image.src" :alt="item.image.alt" />
+      <img
+        v-if="item.image"
+        class="hero__image"
+        :src="item.image.src"
+        :alt="item.image.alt"
+      />
       <div class="hero__content">
         <h1 class="hero__title">
           {{ item.title }}
@@ -77,6 +82,7 @@ export default {
   &__title {
     margin: 0;
 
+    color: $white;
     font-size: 4rem;
   }
 
@@ -89,7 +95,9 @@ export default {
     justify-content: center;
 
     transition: all 0.33s;
-    background: $blue;
+
+    color: $white;
+    background: $main-color;
 
     span {
       display: block;

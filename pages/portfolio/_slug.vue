@@ -10,7 +10,12 @@ export default {
   name: 'SinglePorfolio',
   data() {
     return {
-      portfolio: {}
+      portfolio: {},
+      meta: {
+        title: '',
+        desc: '',
+        imageUrl: ''
+      }
     }
   },
   async fetch() {
@@ -18,15 +23,20 @@ export default {
       .where({ slug: this.$route.params.slug })
       .fetch()
     this.portfolio = portfolios.shift()
+    this.meta = {
+      title: this.portfolio.title,
+      desc: this.portfolio.content.substring(0, 50),
+      imageUrl: this.portfolio.image.src
+    }
   },
   head() {
     return {
-      title: `${this.portfolio.title} | Elvis Rauza`,
+      title: `${this.meta.title} | Elvis Rauza`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.portfolio.content.substring(0, 50)
+          content: this.meta.desc
         },
         {
           hid: 'og:url',
@@ -36,12 +46,12 @@ export default {
         {
           hid: 'og:image',
           name: 'og:image',
-          content: this.portfolio.image.src
+          content: this.meta.imageUrl
         },
         {
           hid: 'og:description',
           name: 'og:description',
-          content: this.portfolio.content.substring(0, 50)
+          content: this.meta.desc
         }
       ]
     }

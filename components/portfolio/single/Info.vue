@@ -1,9 +1,9 @@
 <template>
   <!-- Add visit website -->
   <section class="info">
-    <div class="container">
+    <div class="container container--medium">
       <div class="flexbox">
-        <div class="col col-60">
+        <div class="col col-70 col-s-full">
           <!-- <router-link
             class="hero__back"
             to="/"
@@ -12,7 +12,7 @@
           </router-link> -->
           <PortfolioSingleAbout :item="item" />
         </div>
-        <div class="col col-40">
+        <div class="col col-30 col-s-full">
           <PortfolioSingleBuiltWith :item="item" />
         </div>
       </div>

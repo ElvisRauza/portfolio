@@ -1,7 +1,7 @@
 <template>
   <section class="portfolio">
-    <div class="container">
-      <h2 class="block-title">My work</h2>
+    <div class="container container--medium">
+      <h2 class="block-title">Some Things I’ve Built</h2>
       <div class="flexbox flexbox--full">
         <div
           v-for="item in portfolios"
@@ -10,6 +10,9 @@
         >
           <PortfolioItem :item="item" />
         </div>
+      </div>
+      <div class="portfolio__all">
+        <nuxt-link class="btn btn-outline" to="/portfolio">View all projects</nuxt-link>
       </div>
     </div>
   </section>
@@ -37,4 +40,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.portfolio {
+  &__all {
+    text-align: center;
+    margin: 30px 0 0;
+  }
+}
+</style>

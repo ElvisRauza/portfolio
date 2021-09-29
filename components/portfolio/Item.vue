@@ -1,5 +1,5 @@
 <template>
-  <router-link
+  <nuxt-link
     v-observe-visibility="{
       callback: handlePortfolioAnimation,
       once: true,
@@ -20,7 +20,7 @@
         {{ item.title }}
       </h2>
     </div>
-  </router-link>
+  </nuxt-link>
 </template>
 
 <script>
@@ -75,6 +75,12 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    transition: all 0.2s;
+    
+    .portfolio-item:hover & {
+      opacity: 0.5;
+    }
   }
 
   &__overlay {
@@ -91,7 +97,6 @@ export default {
     display: flex;
     align-items: flex-end;
 
-    background-color: rgba($gray, 0.3);
     transition: all 0.2s;
 
     .portfolio-item:hover & {
@@ -103,8 +108,8 @@ export default {
   &__title {
     opacity: 0.8;
 
-    color: white;
-    font-size: 20px;
+    color: $white;
+    font-size: 26px;
     margin: 0;
 
     transition: all 0.3s ease-out;

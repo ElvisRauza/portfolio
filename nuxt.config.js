@@ -68,10 +68,10 @@ export default {
   googleFonts: {
     display: 'swap',
     families: {
-      Montserrat: {
-        wght: [400, 500, 600]
+      'Source+Sans+Pro': {
+        wght: [400, 500, 600],
       },
-    }
+    },
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules

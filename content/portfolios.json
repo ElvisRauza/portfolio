@@ -9,7 +9,7 @@
       "src": "/images/owood-featured.jpg",
       "alt": "Owood"
     },
-    "builtWith": ["wordpress", "vue"],
+    "builtWith": ["wordpress", "php", "js", "vue"],
     "websiteUrl": "https://www.owood.lv/"
   },
   {

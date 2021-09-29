@@ -11,7 +11,7 @@
           <img
             width="42"
             height="42"
-            :src="`/images/${tech}.svg`"
+            :src="`/images/tech/${tech}.svg`"
             :alt="tech"
           />
           <span>{{ getTechName(tech) }}</span>
@@ -34,7 +34,9 @@ export default {
     getTechName(name) {
       const techs = {
         wordpress: 'WordPress',
-        vue: 'Vue.JS'
+        vue: 'Vue',
+        php: 'PHP',
+        js: 'JavaScript',
       }
 
       return techs[name]
@@ -51,6 +53,10 @@ export default {
 
   &__tooltip {
     margin: 0 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -69,7 +75,7 @@ export default {
 
     color: $white;
     border-radius: 3px;
-    background-color: $blue;
+    background-color: $main-color;
 
     opacity: 0;
     transform: translateX(-50%);
