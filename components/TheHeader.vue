@@ -20,6 +20,5 @@ export default {
   left: 0;
   right: 0;
   padding: 30px 0;
-  background-color: rgba($black, 0.3);
 }
 </style>

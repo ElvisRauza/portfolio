@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio-item">
     <div>
-      <h2>{{ item.title }}</h2>
+      <h2>{{ item.name }}</h2>
       <p>{{ item.short_desc }}</p>
       <ul>
         <li v-for="(tech, i) in item.builtWith" :key="i">
