@@ -67,7 +67,11 @@ h4 {
 }
 
 section {
-  padding: 15rem 0;
+  padding: 100px 0;
+
+  &:first-child {
+    padding-top: 230px;
+  }
 
   &.full {
     padding: 0;

@@ -1,35 +1,32 @@
 [
   {
-    "id": "1",
     "slug": "owood",
-    "title": "Owood",
-    "content": "Website uses Wordpress. Catalog utilizes Vue.JS for faster product filtering.",
+    "name": "Owood",
+    "short_desc": "Created custom WordPress theme with WooCommerce support. Catalog uses Vue.JS to enhance user experience.",
     "featured": true,
     "image": {
-      "src": "/images/owood-featured.jpg",
+      "src": "/images/owood.jpg",
       "alt": "Owood"
     },
-    "builtWith": ["wordpress", "php", "js", "vue"],
-    "websiteUrl": "https://www.owood.lv/"
+    "builtWith": ["php", "js", "vue", "wordpress", "WooCommerce"],
+    "websiteUrl": "https://www.owood.lv/en"
   },
   {
-    "id": 2,
     "slug": "project-1",
-    "title": "Project",
-    "content": "",
-    "featured": false,
+    "name": "5G TECHRITORY",
+    "short_desc": "",
+    "featured": true,
     "image": {
-      "src": "/images/qiadYggIU5w.jpg",
+      "src": "/images/5gtechritory.jpg",
       "alt": ""
     },
-    "builtWith": ["wordpress"],
-    "websiteUrl": "https://www.caballero.lv/"
+    "builtWith": ["php", "js", "wordpress"],
+    "websiteUrl": "https://www.5gtechritory.com/"
   },
   {
-    "id": 3,
     "slug": "project-2",
-    "title": "Project",
-    "content": "",
+    "name": "Project",
+    "short_desc": "",
     "featured": false,
     "image": {
       "src": "/images/qiadYggIU5w.jpg",
@@ -39,10 +36,9 @@
     "websiteUrl": "https://www.caballero.lv/"
   },
   {
-    "id": 4,
     "slug": "project-3",
-    "title": "Project",
-    "content": "",
+    "name": "Project",
+    "short_desc": "",
     "featured": false,
     "image": {
       "src": "/images/qiadYggIU5w.jpg",

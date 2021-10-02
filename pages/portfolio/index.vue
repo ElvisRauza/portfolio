@@ -1,16 +1,8 @@
 <template>
   <section class="portfolio">
-    <div class="container">
+    <div class="container container--medium">
       <h2 class="block-title">My work</h2>
-      <div class="flexbox flexbox--full">
-        <div
-          v-for="item in portfolios"
-          :key="item.id"
-          class="col col-50 col-s-full"
-        >
-          <PortfolioItem :item="item" />
-        </div>
-      </div>
+      <PortfolioList />
     </div>
   </section>
 </template>
@@ -18,14 +10,6 @@
 <script>
 export default {
   name: 'Portfolio',
-  data() {
-    return {
-      portfolios: []
-    }
-  },
-  async fetch() {
-    this.portfolios = await this.$content('portfolios').fetch()
-  },
   head: {
     title: 'Portfolios | Elvis Rauza',
     meta: [

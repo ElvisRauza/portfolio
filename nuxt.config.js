@@ -46,6 +46,8 @@ export default {
   plugins: [
     // https://github.com/Akryum/vue-observe-visibility
     '@/plugins/vue-observe-visibility',
+    // https://github.com/shrpne/vue-inline-svg
+    '@/plugins/vue-inline-svg',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
