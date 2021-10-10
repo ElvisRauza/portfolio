@@ -23,13 +23,23 @@
 }
 
 .flexbox {
+  @include resp-max('s') {
+    margin: 0 -15px;
+  }
+  @include resp-min('s') {
+    margin: 0 -30px;
+  }
+
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0 -30px;
-
   .col {
-    padding: 0 30px;
+    @include resp-max('s') {
+      padding: 0 15px;
+    }
+    @include resp-min('s') {
+      padding: 0 30px;
+    }
   }
 
   &--full {
@@ -41,10 +51,20 @@
   }
 
   &--grid {
-    margin: -30px;
+    @include resp-max('s') {
+      margin: -15px;
+    }
+    @include resp-min('s') {
+      margin: -30px;
+    }
 
     & > .col {
-      padding: 30px;
+      @include resp-max('s') {
+        padding: 15px;
+      }
+      @include resp-min('s') {
+        padding: 30px;
+      }
     }
   }
 
@@ -88,19 +108,19 @@
 
   @include sizes;
 
-  @include resp-max("l") {
+  @include resp-max('l') {
     &-l {
       @include sizes;
     }
   }
 
-  @include resp-max("m") {
+  @include resp-max('m') {
     &-m {
       @include sizes;
     }
   }
 
-  @include resp-max("s") {
+  @include resp-max('s') {
     &-s {
       @include sizes;
     }

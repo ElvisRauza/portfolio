@@ -67,7 +67,12 @@ h4 {
 }
 
 section {
-  padding: 100px 0;
+  @include resp-max('s') {
+    padding: 75px 0;
+  }
+  @include resp-min('s') {
+    padding: 100px 0;
+  }
 
   &:first-child {
     padding-top: 230px;
@@ -79,7 +84,12 @@ section {
 }
 
 .container {
-  padding: 0 30px;
+  @include resp-max('s') {
+    padding: 0 15px;
+  }
+  @include resp-min('s') {
+    padding: 0 30px;
+  }
 
   &--medium {
     @include resp-min("s") {

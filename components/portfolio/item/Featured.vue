@@ -1,5 +1,12 @@
 <template>
-  <div class="portfolio-item">
+  <div
+    v-observe-visibility="{
+      callback: handleAnimation,
+      once: true,
+      throttle: 500
+    }"
+    class="portfolio-item animate animate--fade-in"
+  >
     <div class="portfolio-item__picture">
       <a
         class="portfolio-item__overlay"
@@ -61,12 +68,10 @@ export default {
     }
   },
   methods: {
-    handlePortfolioAnimation(isVisible, entry) {
-      const el = entry.target
+    handleAnimation(isVisible, e) {
       if (isVisible) {
-        el.classList.add('portfolio-item--animate')
-      } else {
-        el.classList.remove('portfolio-item--animate')
+        const el = e.target
+        el.classList.add('animated')
       }
     }
   }
@@ -75,21 +80,32 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio-item {
-  display: flex;
-  align-items: center;
-  margin: 0 -15px;
+  @include resp-min('s') {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+  }
   margin-bottom: 100px;
 
   &:nth-child(even) {
-    flex-direction: row-reverse;
+    @include resp-min('s') {
+      flex-direction: row-reverse;
+    }
   }
   &:nth-child(odd) {
-    text-align: right;
+    @include resp-min('s') {
+      text-align: right;
+    }
   }
 
   &__picture {
-    width: 60%;
-    padding: 15px;
+    @include resp-max('s') {
+      margin-bottom: 15px;
+    }
+    @include resp-min('s') {
+      width: 60%;
+      padding: 15px;
+    }
   }
 
   &__overlay {
@@ -127,8 +143,10 @@ export default {
   }
 
   &__main {
-    width: 40%;
-    padding: 15px;
+    @include resp-min('s') {
+      width: 40%;
+      padding: 15px;
+    }
   }
 
   &__title {
@@ -136,21 +154,26 @@ export default {
   }
 
   &__desc-wrap {
+    @include resp-min('s') {
+      padding-left: 25px;
+    }
     position: relative;
     z-index: 1;
 
     padding: 15px;
-    padding-left: 25px;
-    margin-bottom: 15px;
     border-radius: 3px;
     background-color: lighten($bg-color, 5%);
     box-shadow: 0 0 5px 0 rgba($black, 0.1);
 
     .portfolio-item:nth-child(odd) & {
-      margin-left: -80px;
+      @include resp-min('s') {
+        margin-left: -80px;
+      }
     }
     .portfolio-item:nth-child(even) & {
-      margin-right: -80px;
+      @include resp-min('s') {
+        margin-right: -80px;
+      }
     }
   }
 
@@ -164,22 +187,24 @@ export default {
 
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -5px;
+    margin: 5px -5px 0;
 
     .portfolio-item:nth-child(odd) & {
-      justify-content: flex-end;
+      @include resp-min('s') {
+        justify-content: flex-end;
+      }
     }
   }
 
   &__tech {
-    margin: 0 5px;
+    margin: 10px 5px 0;
   }
 
   &__tech-item {
     font-size: 1.4rem;
     padding: 3px 7px;
     border-radius: 3px;
-    background-color: rgba($black, 0.1);
+    background-color: rgba($black, 0.5);
   }
 
   &__visit {

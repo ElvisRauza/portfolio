@@ -25,6 +25,6 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio {
-  padding-top: 130px;
+  padding-top: 100px;
 }
 </style>

@@ -8,11 +8,12 @@
       "src": "/images/owood.jpg",
       "alt": "Owood"
     },
-    "builtWith": ["php", "js", "vue", "wordpress", "WooCommerce"],
+    "year": 2020,
+    "builtWith": ["PHP", "JS", "Vue", "WordPress", "WooCommerce"],
     "websiteUrl": "https://www.owood.lv/en"
   },
   {
-    "slug": "project-1",
+    "slug": "5gtech",
     "name": "5G TECHRITORY",
     "short_desc": "",
     "featured": true,
@@ -20,7 +21,8 @@
       "src": "/images/5gtechritory.jpg",
       "alt": ""
     },
-    "builtWith": ["php", "js", "wordpress"],
+    "year": 2021,
+    "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.5gtechritory.com/"
   },
   {
@@ -32,7 +34,7 @@
       "src": "/images/qiadYggIU5w.jpg",
       "alt": ""
     },
-    "builtWith": ["wordpress"],
+    "builtWith": ["WordPress"],
     "websiteUrl": "https://www.caballero.lv/"
   },
   {
@@ -44,7 +46,7 @@
       "src": "/images/qiadYggIU5w.jpg",
       "alt": ""
     },
-    "builtWith": ["wordpress"],
+    "builtWith": ["WordPress"],
     "websiteUrl": "https://www.caballero.lv/"
   }
 ]

@@ -1,28 +1,26 @@
 <template>
   <section class="hero full">
-    <div class="hero__bg">
-      
-    </div>
+    <div class="hero__bg"></div>
     <div class="container container--medium">
       <div class="hero__inner">
         <h1
           v-observe-visibility="{
-            callback: handleTitleAnimation,
+            callback: handleAnimation,
             once: true,
             throttle: 300
           }"
-          class="hero__title"
+          class="hero__title animate animate--fade-in"
         >
           Hi, my <br />
           name is <span>Elvis</span>. <br />
         </h1>
         <p
           v-observe-visibility="{
-            callback: handleDescAnimation,
+            callback: handleAnimation,
             once: true,
-            throttle: 350
+            throttle: 300
           }"
-          class="hero__desc"
+          class="hero__desc animate animate--fade-in"
         >
           I'm a <b>full-stack web developer</b>,<br />
           from Riga, Latvia.
@@ -36,13 +34,7 @@
 export default {
   name: 'HomeHero',
   methods: {
-    handleTitleAnimation(isVisible, e) {
-      if (isVisible) {
-        const el = e.target
-        el.classList.add('animated')
-      }
-    },
-    handleDescAnimation(isVisible, e) {
+    handleAnimation(isVisible, e) {
       if (isVisible) {
         const el = e.target
         el.classList.add('animated')
@@ -83,21 +75,12 @@ export default {
   }
 
   &__title {
+    margin: 0;
     font-size: 7rem;
     line-height: 1;
 
-    // animate
-    opacity: 0;
-    margin: -60px 0 0;
-    transition: opacity 0.75s ease-in, margin 1s linear;
-
     span {
       color: $main-color;
-    }
-
-    &.animated {
-      margin-top: 0;
-      opacity: 1;
     }
 
     span {
@@ -109,16 +92,6 @@ export default {
   &__desc {
     margin: 30px 0 0;
     font-size: 3rem;
-
-    // Animate
-    opacity: 0;
-    margin: -60px 0 0;
-    transition: opacity 0.75s ease-in, margin 1s linear;
-
-    &.animated {
-      margin-top: 0;
-      opacity: 1;
-    }
   }
 }
 </style>

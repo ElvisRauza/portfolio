@@ -1,7 +1,16 @@
 <template>
   <section class="portfolio">
     <div class="container container--medium">
-      <h2 class="block-title">Some Things I’ve Built</h2>
+      <h2
+        v-observe-visibility="{
+          callback: handleAnimation,
+          once: true,
+          throttle: 300
+        }"
+        class="block-title animate animate--fade-in"
+      >
+        Some Things I’ve Built
+      </h2>
       <div class="portfolio__items">
         <PortfolioItemFeatured
           v-for="(item, i) in portfolios"
@@ -9,7 +18,14 @@
           :item="item"
         />
       </div>
-      <div class="portfolio__all">
+      <div
+        v-observe-visibility="{
+          callback: handleAnimation,
+          once: true,
+          throttle: 700
+        }"
+        class="portfolio__all animate animate--fade-in"
+      >
         <nuxt-link class="btn btn-outline" to="/portfolio"
           >View all projects</nuxt-link
         >
@@ -31,6 +47,14 @@ export default {
       .where({ featured: true })
       .limit(4)
       .fetch()
+  },
+  methods: {
+    handleAnimation(isVisible, e) {
+      if (isVisible) {
+        const el = e.target
+        el.classList.add('animated')
+      }
+    }
   }
 }
 </script>
@@ -39,7 +63,7 @@ export default {
 .portfolio {
   &__all {
     text-align: center;
-    margin: 30px 0 0;
+    margin-top: 30px;
   }
 }
 </style>
