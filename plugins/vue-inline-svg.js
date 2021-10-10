@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import InlineSvg from 'vue-inline-svg'
+import { InlineSvgPlugin } from 'vue-inline-svg'
 
-Vue.component('InlineSvg', InlineSvg)
+Vue.use(InlineSvgPlugin)

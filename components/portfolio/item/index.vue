@@ -32,7 +32,7 @@
           rel="nofollow"
           aria-label="Visit website"
         >
-          <InlineSvg src="/images/external.svg" width="24" height="24" />
+          <inline-svg src="/images/external.svg" width="24" height="24" />
         </a>
       </div>
     </div>
