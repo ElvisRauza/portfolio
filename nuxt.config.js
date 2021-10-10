@@ -13,6 +13,10 @@ export default {
         content: 'width=device-width, initial-scale=1',
       },
       {
+        name: 'robots',
+        content: 'noindex',
+      },
+      {
         name: 'format-detection',
         content: 'telephone=no',
       },
