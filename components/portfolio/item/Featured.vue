@@ -12,7 +12,7 @@
         class="portfolio-item__overlay"
         :href="item.websiteUrl"
         target="_blank"
-        rel="nofollow"
+        rel="nofollow noreferrer"
         aria-label="Visit website"
       >
         <img
@@ -27,7 +27,7 @@
     </div>
     <div class="portfolio-item__main">
       <h2 class="portfolio-item__title">
-        <a :href="item.websiteUrl" target="_blank" rel="nofollow">{{
+        <a :href="item.websiteUrl" target="_blank" rel="nofollow noreferrer">{{
           item.name
         }}</a>
       </h2>
@@ -48,7 +48,7 @@
           class="btn"
           :href="item.websiteUrl"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
           aria-label="Visit website"
         >
           <inline-svg src="/images/external.svg" width="24" height="24" />

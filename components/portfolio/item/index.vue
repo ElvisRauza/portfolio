@@ -29,7 +29,7 @@
         <a
           :href="item.url"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
           aria-label="Visit website"
         >
           <inline-svg src="/images/external.svg" width="24" height="24" />
