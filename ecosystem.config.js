@@ -1,12 +1,18 @@
 module.exports = {
   apps: [
     {
-      name: 'ElvisRauza',
-      exec_mode: 'cluster',
-      port: 3000,
+      name: 'elvisrauza-app',
+      script: 'npm',
+      args: 'run start',
       instances: 'max',
-      script: './node_modules/nuxt/bin/nuxt.js',
-      args: 'start',
+      autorestart: true,
+      watch: false,
+      max_memory_restart: '512M',
+      env: {
+        HOST: '0.0.0.0',
+        PORT: 5000,
+        NODE_ENV: 'production'
+      },
     },
   ],
 }
