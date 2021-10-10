@@ -18,7 +18,7 @@
           v-observe-visibility="{
             callback: handleAnimation,
             once: true,
-            throttle: 300
+            throttle: 400
           }"
           class="hero__desc animate animate--fade-in"
         >

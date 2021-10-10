@@ -5,7 +5,7 @@
         v-observe-visibility="{
           callback: handleAnimation,
           once: true,
-          throttle: 300
+          throttle: 100
         }"
         class="block-title animate animate--fade-in"
       >
@@ -22,7 +22,7 @@
         v-observe-visibility="{
           callback: handleAnimation,
           once: true,
-          throttle: 700
+          throttle: 500
         }"
         class="portfolio__all animate animate--fade-in"
       >

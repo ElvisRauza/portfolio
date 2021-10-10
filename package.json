@@ -12,10 +12,11 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.18.2",
     "nuxt": "^2.15.7",
-    "vue-observe-visibility": "^1.0.0",
-    "vue-inline-svg": "^2.1.0"
+    "vue-inline-svg": "^2.1.0",
+    "vue-observe-visibility": "^1.0.0"
   },
   "engines": {
     "node": "14.x"

@@ -5,7 +5,7 @@
         v-observe-visibility="{
           callback: handleAnimation,
           once: true,
-          throttle: 300
+          throttle: 100
         }"
         class="block-title animate animate--fade-in"
       >
@@ -17,7 +17,7 @@
             v-observe-visibility="{
               callback: handleAnimation,
               once: true,
-              throttle: 500
+              throttle: 300
             }"
             class="content animate animate--fade-in"
           >
@@ -34,9 +34,9 @@
               v-observe-visibility="{
                 callback: handleAnimation,
                 once: true,
-                throttle: 600
+                throttle: 500
               }"
-              class="tech__item"
+              class="tech__item animate animate--fade-in"
             >
               <p class="tech__item-label">{{ skill.label }}</p>
             </li>
@@ -80,12 +80,10 @@ export default {
   margin: 0 -5px;
 
   &__item {
-    opacity: 0;
     margin: 0 5px;
 
     display: flex;
     align-items: center;
-    transition: opacity 0.75s ease-in;
 
     &::before {
       content: '';
@@ -94,10 +92,6 @@ export default {
       height: 2px;
       margin-right: 3px;
       background-color: $main-color;
-    }
-
-    &.animated {
-      opacity: 1;
     }
   }
 

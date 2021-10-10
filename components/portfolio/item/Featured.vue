@@ -3,7 +3,7 @@
     v-observe-visibility="{
       callback: handleAnimation,
       once: true,
-      throttle: 500
+      throttle: 300
     }"
     class="portfolio-item animate animate--fade-in"
   >
@@ -80,12 +80,14 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio-item {
+  @include resp-max('s') {
+    margin-bottom: 60px;
+  }
   @include resp-min('s') {
     display: flex;
     align-items: center;
-    margin: 0 -15px;
+    margin: 0 -15px 100px;
   }
-  margin-bottom: 100px;
 
   &:nth-child(even) {
     @include resp-min('s') {
