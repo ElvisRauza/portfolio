@@ -104,5 +104,19 @@
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.partneriba.lv/"
+  },
+  {
+    "slug": "safestay",
+    "name": "SafeStay",
+    "year": 2019,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.safestay.com/"
+  },
+  {
+    "slug": "a4d",
+    "name": "A4D",
+    "year": 2018,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://a4d.lv/"
   }
 ]
