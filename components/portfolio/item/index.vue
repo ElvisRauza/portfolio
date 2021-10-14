@@ -3,7 +3,7 @@
     v-observe-visibility="{
       callback: handleAnimation,
       once: true,
-      throttle: 300
+      throttle: throttle
     }"
     class="portfolio-item"
   >
@@ -27,7 +27,7 @@
       </div>
       <div class="col col-10 col-s-25">
         <a
-          :href="item.url"
+          :href="item.websiteUrl"
           target="_blank"
           rel="nofollow noreferrer"
           aria-label="Visit website"
@@ -43,9 +43,18 @@
 export default {
   name: 'PortfolioItem',
   props: {
-    item: {
+    index: {
+      type: Number,
       required: true,
-      type: Object
+    },
+    item: {
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    throttle() {
+      return 100 * this.index;
     }
   },
   methods: {

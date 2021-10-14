@@ -1,4 +1,8 @@
 {
+  "metaData": {
+    "title": "Elvis Rauza",
+    "desc": "Elvis Rauza is a web developer who specializes in building WordPress websites"
+  },
   "hero": {
     "name": "Elvis",
     "profession": "full-stack web developer",

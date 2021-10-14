@@ -17,7 +17,12 @@
       </div>
     </div>
     <div class="portfolio__list">
-      <PortfolioItem v-for="item in portfolios" :key="item.id" :item="item" />
+      <PortfolioItem
+        v-for="(item, i) in portfolios"
+        :key="i"
+        :item="item"
+        :index="i"
+      />
     </div>
   </div>
 </template>
@@ -37,7 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio {
-  
   &__head {
     color: $slate;
     font-weight: 700;

@@ -1,39 +1,108 @@
 [
   {
-    "slug": "5gtech",
+    "slug": "5g-tech",
     "name": "5G TECHRITORY",
     "short_desc": "",
     "featured": true,
     "image": {
-      "src": "/images/5gtechritory.jpg",
-      "alt": ""
+      "src": "/images/portfolio/5gtechritory.jpg",
+      "alt": "5G TECHRITORY website screenshot"
     },
     "year": 2021,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.5gtechritory.com/"
   },
   {
-    "slug": "project-2",
-    "name": "Project",
+    "slug": "powerall",
+    "name": "PowerAll",
     "short_desc": "",
-    "featured": false,
+    "featured": true,
     "image": {
-      "src": "/images/qiadYggIU5w.jpg",
-      "alt": ""
+      "src": "/images/portfolio/powerall.jpg",
+      "alt": "PowerAll website screenshot"
     },
-    "builtWith": ["WordPress"],
-    "websiteUrl": "https://www.caballero.lv/"
+    "year": 2021,
+    "builtWith": ["PHP", "JS", "Vue", "WordPress", "WooCommerce"],
+    "websiteUrl": "https://www.powerall.lv/"
   },
   {
-    "slug": "project-3",
-    "name": "Project",
+    "slug": "em-labour-market-forecasts",
+    "name": "EM labor market forecasts",
     "short_desc": "",
-    "featured": false,
+    "featured": true,
     "image": {
-      "src": "/images/qiadYggIU5w.jpg",
-      "alt": ""
+      "src": "/images/portfolio/prognozes-em-gov.jpg",
+      "alt": "EM website screenshot"
     },
-    "builtWith": ["WordPress"],
-    "websiteUrl": "https://www.caballero.lv/"
+    "year": 2021,
+    "builtWith": ["Laravel", "Inertia.js", "Vue.js"],
+    "websiteUrl": "https://prognozes.em.gov.lv/en"
+  },
+  {
+    "slug": "sporta-halle",
+    "name": "Sprota Halle",
+    "image": {
+      "src": "/images/portfolio/sporta-halle.jpg",
+      "alt": "Sporta Halle website screenshot"
+    },
+    "year": 2021,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.sportahalle.lv/en/"
+  },
+  {
+    "slug": "elva",
+    "name": "Elva",
+    "short_desc": "",
+    "featured": true,
+    "image": {
+      "src": "/images/portfolio/elva.jpg",
+      "alt": "Elva website screenshot"
+    },
+    "year": 2021,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.elva.lv/en/"
+  },
+  {
+    "slug": "gelvorasergel",
+    "name": "GelvoraSergel",
+    "image": {
+      "src": "/images/portfolio/gelvorasergel.jpg",
+      "alt": "GelvoraSergel website screenshot"
+    },
+    "year": 2020,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://gelvorasergel.lv/en/"
+  },
+  {
+    "slug": "aksioma24",
+    "name": "Aksioma 24",
+    "image": {
+      "src": "/images/portfolio/aksioma-24.jpg",
+      "alt": "Aksioma 24 website screenshot"
+    },
+    "year": 2020,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.aksioma24.lv/en/"
+  },
+  {
+    "slug": "noblewinebar",
+    "name": "Noble Wine",
+    "year": 2020,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.noblewinebar.lv/en/"
+  },
+  {
+    "slug": "bumbinbade",
+    "name": "Bumbinbade",
+    "year": 2020,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.bumbinbade.lv/"
+  },
+  {
+    "slug": "partneriba",
+    "name": "Partnerība",
+    "year": 2020,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.partneriba.lv/"
   }
 ]

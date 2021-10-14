@@ -10,35 +10,34 @@
 <script>
 export default {
   name: 'Home',
-  data() {
-    return {
-      hero: {},
-      about: {},
-      portfolios: {},
-      contact: {}
-    }
-  },
-  async fetch() {
-    const data = await this.$content('home').fetch()
-    this.hero = data.hero
-    this.about = data.about
-    this.portfolios = data.portfolios
-    this.portfolios.items = await this.$content('portfolios')
+  async asyncData(context) {
+    // Get Data
+    const data = await context.$content('home').fetch()
+    const portfolioItems = await context
+      .$content('portfolios')
       .where({ featured: true })
       .limit(4)
       .fetch()
-    this.contact = data.contact
+    // Set data
+    const metaData = data.metaData
+    const hero = data.hero
+    const about = data.about
+    const portfolios = { ...data.portfolios, items: portfolioItems }
+    const contact = data.contact
+    // Return data
+    return { metaData, hero, about, portfolios, contact }
   },
-  head: {
-    title: 'Elvis Rauza',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          'Elvis Rauza is a web developer who specializes in building wordpress websites'
-      }
-    ]
+  head() {
+    return {
+      title: this.metaData.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.metaData.desc
+        }
+      ]
+    }
   }
 }
 </script>
