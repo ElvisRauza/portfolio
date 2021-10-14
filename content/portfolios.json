@@ -1,18 +1,5 @@
 [
   {
-    "slug": "owood",
-    "name": "Owood",
-    "short_desc": "Created custom WordPress theme with WooCommerce support. Catalog uses Vue.JS to enhance user experience.",
-    "featured": true,
-    "image": {
-      "src": "/images/owood.jpg",
-      "alt": "Owood"
-    },
-    "year": 2020,
-    "builtWith": ["PHP", "JS", "Vue", "WordPress", "WooCommerce"],
-    "websiteUrl": "https://www.owood.lv/en"
-  },
-  {
     "slug": "5gtech",
     "name": "5G TECHRITORY",
     "short_desc": "",

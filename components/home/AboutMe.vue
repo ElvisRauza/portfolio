@@ -9,7 +9,7 @@
         }"
         class="block-title animate animate--fade-in"
       >
-        About me
+        {{ data.title }}
       </h2>
       <div class="flexbox">
         <div class="col col-70 col-s-full">
@@ -21,15 +21,12 @@
             }"
             class="content animate animate--fade-in"
           >
-            <p>
-              I have experiance developing WordPress sites from One-Pagers to
-              fully-fledged WooCommerce stores.
-            </p>
-            <p>Some of technologies I work with:</p>
+            <p>{{ data.content }}</p>
+            <p>{{ data.skills.title }}</p>
           </div>
           <ul class="tech">
             <li
-              v-for="(skill, i) in skills"
+              v-for="(skill, i) in data.skills.items"
               :key="i"
               v-observe-visibility="{
                 callback: handleAnimation,
@@ -50,14 +47,11 @@
 <script>
 export default {
   name: 'AboutMe',
-  data() {
-    return {
-      skills: []
+  props: {
+    data: {
+      type: Object,
+      required: true
     }
-  },
-  async fetch() {
-    const home = await this.$content('home').fetch()
-    this.skills = home.skills
   },
   methods: {
     handleAnimation(isVisible, entry) {

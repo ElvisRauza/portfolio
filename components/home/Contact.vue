@@ -10,7 +10,7 @@
           }"
           class="block-title animate animate--fade-in"
         >
-          Get In Touch
+          {{ data.title }}
         </h2>
         <div
           v-observe-visibility="{
@@ -20,7 +20,7 @@
           }"
           class="animate animate--fade-in"
         >
-          <a class="btn btn-outline" href="mailto:elvis.rauza@gmail.com"
+          <a class="btn btn-outline" :href="`mailto:${data.email}`"
             >Say Hello</a
           >
         </div>
@@ -32,6 +32,12 @@
 <script>
 export default {
   name: 'HomeContact',
+  props: {
+    data: {
+      type: Object,
+      required: true
+    }
+  },
   methods: {
     handleAnimation(isVisible, e) {
       if (isVisible) {

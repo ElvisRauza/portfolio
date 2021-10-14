@@ -1,22 +1,41 @@
 {
-  "skills": [
-    {
-      "label": "HTML"
-    },
-    {
-      "label": "CSS"
-    },
-    {
-      "label": "JavaScript"
-    },
-    {
-      "label": "PHP"
-    },
-    {
-      "label": "Vue"
-    },
-    {
-      "label": "Docker"
+  "hero": {
+    "name": "Elvis",
+    "profession": "full-stack web developer",
+    "location": "Riga, Latvia."
+  },
+  "about": {
+    "title": "About me",
+    "content": "I have experience developing WordPress sites from One-Pagers to fully-fledged WooCommerce stores.",
+    "skills": {
+      "title": "Some of technologies I work with:",
+      "items": [
+        {
+          "label": "HTML"
+        },
+        {
+          "label": "CSS"
+        },
+        {
+          "label": "JavaScript"
+        },
+        {
+          "label": "PHP"
+        },
+        {
+          "label": "Vue"
+        },
+        {
+          "label": "Docker"
+        }
+      ]
     }
-  ]
+  },
+  "portfolios": {
+    "title": "Some Things I’ve Built"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "email": "elvis.rauza@gmail.com"
+  }
 }

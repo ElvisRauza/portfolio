@@ -12,7 +12,8 @@
           class="hero__title animate animate--fade-in"
         >
           Hi, my <br />
-          name is <span>Elvis</span>. <br />
+          name is <span>{{ data.name }}</span
+          >. <br />
         </h1>
         <p
           v-observe-visibility="{
@@ -22,8 +23,9 @@
           }"
           class="hero__desc animate animate--fade-in"
         >
-          I'm a <b>full-stack web developer</b>,<br />
-          from Riga, Latvia.
+          I'm a <b>{{ data.profession }}</b
+          ><br />
+          from {{ data.location }}
         </p>
       </div>
     </div>
@@ -33,6 +35,12 @@
 <script>
 export default {
   name: 'HomeHero',
+  props: {
+    data: {
+      type: Object,
+      required: true
+    }
+  },
   methods: {
     handleAnimation(isVisible, e) {
       if (isVisible) {

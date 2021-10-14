@@ -9,11 +9,11 @@
         }"
         class="block-title animate animate--fade-in"
       >
-        Some Things I’ve Built
+        {{ data.title }}
       </h2>
       <div class="portfolio__items">
         <PortfolioItemFeatured
-          v-for="(item, i) in portfolios"
+          v-for="(item, i) in data.items"
           :key="i"
           :item="item"
         />
@@ -37,16 +37,11 @@
 <script>
 export default {
   name: 'Portfolio',
-  data() {
-    return {
-      portfolios: []
+  props: {
+    data: {
+      type: Object,
+      required: true
     }
-  },
-  async fetch() {
-    this.portfolios = await this.$content('portfolios')
-      .where({ featured: true })
-      .limit(4)
-      .fetch()
   },
   methods: {
     handleAnimation(isVisible, e) {
