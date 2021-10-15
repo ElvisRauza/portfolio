@@ -1,5 +1,12 @@
 [
   {
+    "slug": "personal-website",
+    "name": "Personal Website",
+    "year": 2021,
+    "builtWith": ["JS", "Vue", "Nuxt"],
+    "websiteUrl": "https://www.elvisrauza.me/"
+  },
+  {
     "slug": "5g-tech",
     "name": "5G TECHRITORY",
     "short_desc": "",
@@ -13,26 +20,13 @@
     "websiteUrl": "https://www.5gtechritory.com/"
   },
   {
-    "slug": "powerall",
-    "name": "PowerAll",
-    "short_desc": "",
-    "featured": true,
-    "image": {
-      "src": "/images/portfolio/powerall.jpg",
-      "alt": "PowerAll website screenshot"
-    },
-    "year": 2021,
-    "builtWith": ["PHP", "JS", "Vue", "WordPress", "WooCommerce"],
-    "websiteUrl": "https://www.powerall.lv/"
-  },
-  {
     "slug": "em-labour-market-forecasts",
-    "name": "EM labor market forecasts",
+    "name": "MoE labor market forecasts",
     "short_desc": "",
     "featured": true,
     "image": {
       "src": "/images/portfolio/prognozes-em-gov.jpg",
-      "alt": "EM website screenshot"
+      "alt": "MoE website screenshot"
     },
     "year": 2021,
     "builtWith": ["Laravel", "Inertia.js", "Vue.js"],
@@ -40,11 +34,7 @@
   },
   {
     "slug": "sporta-halle",
-    "name": "Sprota Halle",
-    "image": {
-      "src": "/images/portfolio/sporta-halle.jpg",
-      "alt": "Sporta Halle website screenshot"
-    },
+    "name": "Sporta Halle",
     "year": 2021,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.sportahalle.lv/en/"
@@ -65,10 +55,6 @@
   {
     "slug": "gelvorasergel",
     "name": "GelvoraSergel",
-    "image": {
-      "src": "/images/portfolio/gelvorasergel.jpg",
-      "alt": "GelvoraSergel website screenshot"
-    },
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://gelvorasergel.lv/en/"
@@ -76,10 +62,6 @@
   {
     "slug": "aksioma24",
     "name": "Aksioma 24",
-    "image": {
-      "src": "/images/portfolio/aksioma-24.jpg",
-      "alt": "Aksioma 24 website screenshot"
-    },
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.aksioma24.lv/en/"
@@ -93,7 +75,7 @@
   },
   {
     "slug": "bumbinbade",
-    "name": "Bumbinbade",
+    "name": "Bumbiņbāde",
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.bumbinbade.lv/"
@@ -104,6 +86,13 @@
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.partneriba.lv/"
+  },
+  {
+    "slug": "ko-notiek",
+    "name": "ko notiek",
+    "year": 2020,
+    "builtWith": ["PHP", "JS", "WordPress"],
+    "websiteUrl": "https://www.konotiek.lv/"
   },
   {
     "slug": "safestay",

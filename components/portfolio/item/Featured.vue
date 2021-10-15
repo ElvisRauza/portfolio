@@ -122,7 +122,7 @@ export default {
       right: 0;
       bottom: 0;
       background-color: rgba($main-color, 0.4);
-      transition: all 0.25s;
+      transition: all 0.33s;
     }
 
     &:hover {
