@@ -66,7 +66,7 @@ export default {
     // https://google-fonts.nuxtjs.org/
     '@nuxtjs/google-fonts',
     // https://google-analytics.nuxtjs.org/
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -74,12 +74,13 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://sitemap.nuxtjs.org/
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  // Nuxt Style Resources
   styleResources: {
     scss: ['./assets/css/config/index.scss'],
   },
@@ -94,8 +95,8 @@ export default {
     },
   },
 
-  // Google analytics
+  // Google Analytics
   googleAnalytics: {
-    id: 'G-QQLMMCMLVX'
+    id: 'G-HMGFFXW6F1',
   },
 }
