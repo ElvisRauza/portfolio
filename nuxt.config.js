@@ -65,20 +65,9 @@ export default {
     '@nuxtjs/style-resources',
     // https://google-fonts.nuxtjs.org/
     '@nuxtjs/google-fonts',
+    // https://google-analytics.nuxtjs.org/
+    '@nuxtjs/google-analytics'
   ],
-
-  styleResources: {
-    scss: ['./assets/css/config/index.scss'],
-  },
-
-  googleFonts: {
-    display: 'swap',
-    families: {
-      'Source+Sans+Pro': {
-        wght: [400, 500, 600],
-      },
-    },
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -90,4 +79,23 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  styleResources: {
+    scss: ['./assets/css/config/index.scss'],
+  },
+
+  // Google fonts
+  googleFonts: {
+    display: 'swap',
+    families: {
+      'Source+Sans+Pro': {
+        wght: [400, 500, 600],
+      },
+    },
+  },
+
+  // Google analytics
+  googleAnalytics: {
+    id: 'G-QQLMMCMLVX'
+  },
 }
