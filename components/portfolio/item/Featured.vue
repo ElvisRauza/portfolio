@@ -31,8 +31,10 @@
           item.name
         }}</a>
       </h2>
-      <div class="portfolio-item__desc-wrap">
-        <p class="portfolio-item__desc">{{ item.short_desc }}</p>
+      <div v-if="item.short_desc" class="portfolio-item__desc-wrap">
+        <p class="portfolio-item__desc">
+          {{ item.short_desc }}
+        </p>
       </div>
       <ul class="portfolio-item__techs">
         <li

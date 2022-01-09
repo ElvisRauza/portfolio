@@ -9,7 +9,6 @@
   {
     "slug": "5g-tech",
     "name": "5G TECHRITORY",
-    "short_desc": "",
     "featured": true,
     "image": {
       "src": "/images/portfolio/5gtechritory.jpg",
@@ -22,7 +21,6 @@
   {
     "slug": "em-labour-market-forecasts",
     "name": "MoE labor market forecasts",
-    "short_desc": "",
     "featured": true,
     "image": {
       "src": "/images/portfolio/prognozes-em-gov.jpg",
@@ -42,7 +40,6 @@
   {
     "slug": "elva",
     "name": "Elva",
-    "short_desc": "",
     "featured": true,
     "image": {
       "src": "/images/portfolio/elva.jpg",
