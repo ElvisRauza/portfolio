@@ -45,6 +45,17 @@
           <span class="portfolio-item__tech-item">{{ tech }}</span>
         </li>
       </ul>
+      <div class="portfolio-item__made-at">
+        <a
+          class="btn"
+          :href="item.madeAt.url"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="Visit website"
+        >
+          Made at <span>{{ item.madeAt.name }}</span>
+        </a>
+      </div>
       <div class="portfolio-item__visit">
         <a
           class="btn"
@@ -209,6 +220,10 @@ export default {
     padding: 3px 7px;
     border-radius: 3px;
     background-color: rgba($black, 0.5);
+  }
+
+  &__made-at {
+    margin-top: 15px;
   }
 
   &__visit {

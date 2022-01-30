@@ -14,7 +14,17 @@
       <div class="col col-30 col-s-50">
         <h2 class="portfolio-item__title">{{ item.name }}</h2>
       </div>
-      <div class="col col-50 col-s-none">
+      <div class="col col-10 col-s-50">
+        <a
+          v-if="item.madeAt"
+          :href="item.madeAt.url"
+          target="_blank"
+          rel="nofollow noreferrer"
+          >{{ item.madeAt.name }}</a
+        >
+        <p v-else>-</p>
+      </div>
+      <div class="col col-40 col-s-none">
         <ul class="portfolio-item__list">
           <li
             v-for="(tech, i) in item.builtWith"
@@ -45,7 +55,7 @@ export default {
   props: {
     index: {
       type: Number,
-      required: true,
+      required: true
     },
     item: {
       type: Object,
@@ -54,7 +64,7 @@ export default {
   },
   computed: {
     throttle() {
-      return 100 * this.index;
+      return 100 * this.index
     }
   },
   methods: {

@@ -16,7 +16,11 @@
     },
     "year": 2021,
     "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.5gtechritory.com/"
+    "websiteUrl": "https://www.5gtechritory.com/",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "em-labour-market-forecasts",
@@ -28,61 +32,77 @@
     },
     "year": 2021,
     "builtWith": ["Laravel", "Inertia.js", "Vue.js"],
-    "websiteUrl": "https://prognozes.em.gov.lv/en"
+    "websiteUrl": "https://prognozes.em.gov.lv/en",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "sporta-halle",
     "name": "Sporta Halle",
     "year": 2021,
     "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.sportahalle.lv/en/"
-  },
-  {
-    "slug": "elva",
-    "name": "Elva",
-    "featured": true,
-    "image": {
-      "src": "/images/portfolio/elva.jpg",
-      "alt": "Elva website screenshot"
-    },
-    "year": 2021,
-    "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.elva.lv/en/"
+    "websiteUrl": "https://www.sportahalle.lv/en/",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "gelvorasergel",
     "name": "GelvoraSergel",
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://gelvorasergel.lv/en/"
+    "websiteUrl": "https://gelvorasergel.lv/en/",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "aksioma24",
     "name": "Aksioma 24",
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.aksioma24.lv/en/"
+    "websiteUrl": "https://www.aksioma24.lv/en/",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "noblewinebar",
     "name": "Noble Wine",
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.noblewinebar.lv/en/"
+    "websiteUrl": "https://www.noblewinebar.lv/en/",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "bumbinbade",
     "name": "Bumbiņbāde",
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.bumbinbade.lv/"
+    "websiteUrl": "https://www.bumbinbade.lv/",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "partneriba",
     "name": "Partnerība",
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.partneriba.lv/"
+    "websiteUrl": "https://www.partneriba.lv/",
+    "madeAt": {
+      "name": "Caballero",
+      "website": "https://www.caballero.lv"
+    }
   },
   {
     "slug": "ko-notiek",
@@ -90,19 +110,5 @@
     "year": 2020,
     "builtWith": ["PHP", "JS", "WordPress"],
     "websiteUrl": "https://www.konotiek.lv/"
-  },
-  {
-    "slug": "safestay",
-    "name": "SafeStay",
-    "year": 2019,
-    "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://www.safestay.com/"
-  },
-  {
-    "slug": "a4d",
-    "name": "A4D",
-    "year": 2018,
-    "builtWith": ["PHP", "JS", "WordPress"],
-    "websiteUrl": "https://a4d.lv/"
   }
 ]

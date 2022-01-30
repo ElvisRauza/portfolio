@@ -8,7 +8,10 @@
         <div class="col col-30 col-s-50">
           <p>Title</p>
         </div>
-        <div class="col col-50 col-s-none">
+        <div class="col col-10 col-s-none">
+          <p>Made at</p>
+        </div>
+        <div class="col col-40 col-s-none">
           <p>Built with</p>
         </div>
         <div class="col col-10 col-s-25">
