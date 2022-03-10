@@ -95,4 +95,9 @@ export default {
   googleAnalytics: {
     id: 'G-HMGFFXW6F1',
   },
+
+  // Sitemap
+  sitemap: {
+    hostname: 'https://www.elvisrauza.me'
+  }
 }
