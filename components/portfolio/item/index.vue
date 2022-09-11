@@ -64,7 +64,7 @@ export default {
   },
   computed: {
     throttle() {
-      return 100 * this.index
+      return 50 * this.index
     }
   },
   methods: {
@@ -93,7 +93,7 @@ export default {
 
   opacity: 0;
   margin: -30px 0 10px;
-  transition: opacity 0.75s ease-in, margin 1s linear;
+  transition: opacity 0.3s ease-in, margin 0.4s linear;
 
   &.animated {
     opacity: 1;

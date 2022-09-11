@@ -2,7 +2,7 @@
   &--fade-in {
     opacity: 0;
     transform: translateY(-30px);
-    transition: opacity 0.75s ease-in, transform 1s linear;
+    transition: opacity 0.3s ease-in, transform 0.5s linear;
 
     &.animated {
       opacity: 1;
